@@ -1,68 +1,79 @@
+ /* Makes the home page blue and font a different color*/
 
-
-    body {
-        background-color: #205ea0;
-        font-family: Arial, sans-serif;
+body {
+    background-color: #205ea0;
+    font-family: Arial, sans-serif;
 }
-.nav {
+
+.meow {     /* for nav bar, doesnt really do anything just for aestetics, but it does reset the page*/
+    background-color: #69cbff;
+    padding: 15px;
+    border-radius: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #05517a;
-    padding: 15px 20px;
+    max-width: 900px;
+    margin: 20px auto;
 }
-.nav a {
-    color: white;
+/*This is for the letters in the navebar, to make it look abit better
+transition to not rush the image getting bigger.*/
+.meow a { 
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px 15px;
     font-size: 18px;
-    transition:0.3s
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
 }
-.nav a:hover {
-    background-color: #023f5f;
+/*Make background and text different when hovered over*/
+.meow a:hover {
+    background-color: #1cb0ff;
+    color: white;
+}
+
+/*Regular footer
+*/
+#hisss {
+    margin-top: 40px;
+    background-color: #6a34ff;
+    color: white;
+    padding: 20px;
     border-radius: 5px;
-    transition:0.3s
 }
-.nav a:active {
-    background-color: #006094;
-    border-radius: 5px;
-}
-.nav-links {
-    display: flex;
-}
-h3{
-    color: aliceblue;
-}
-.container {
+
+/*Webpage look good by putting a colored container and border radius at 10px so its not too curved*/
+#oink {
     width: 80%;
-    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    background-color: #1287be;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/*So when I hover over the images it grows abit bigger.
+border radius 4px not so curved.
+used what i learnt from the froggy flex game to make my image centered.
+transition to not rush the image getting bigger.
+*/
+.moo {
+    width: 20px;               
+    transition: 0.3s ease-in-out;
+    width: 20%;
+    max-width: 1200px;
     margin: 0 auto; 
     padding: 20px;
     background-color: rgb(0, 47, 59);
     border-radius: 4px;
-    text-align: center;
-}
-
-
-.img-hover {
-width: 20px;               
-transition: transform 0.3s ease-in-out;
-width: 20%;
-max-width: 1200px;
-margin: 0 auto; 
-padding: 20px;
-background-color: rgb(0, 47, 59);
-border-radius: 4px;
-text-align: center;
-}
-.img-hover:hover {
-transform: scale(1.1);      
-}
-
-
-p{
-    color: aliceblue;
-}
+    display: flex;
+    justify-content: center;
+    }
+    /*Make it so image gets bigger by 1.1 when it is hovered over.*/
+    .moo:hover {
+    transform: scale(1.1);      
+    }
 
 
 
