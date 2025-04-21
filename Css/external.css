@@ -1,12 +1,79 @@
- /* Makes the home page blue and font a different color*/
+/*I chose a monochromatic color palette for the project because it keeps the design clean and simple,
+using different shades of one color. This makes everything look neat and organized,
+without too many bright colors that can be distracting. It's easy on the eyes and perfect for light mode,
+giving the website a calm and stylish feel.*/
+
+
+.woof {
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 10px 20px;
+    background-color: #df4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.woof:hover {
+    background-color: #bd3535;
+    transform: scale(1.05);
+}
+
+/*So the color is of the writing is always balck*/
+h3{
+    font-family: Georgia, serif;
+    color: rgb(0, 0, 0);
+}
+
+/*So the color is of the writing is always white and so the writing will always be in the center showing its the title*/
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+}
+
+/*So the color is of the writing is always black*/
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+li{
+    color: rgb(0, 0, 0);
+    font-family: Tahoma, sans-serif;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+/*to make it in the center and black*/
+h2{
+    font-family: 'Lato', sans-serif;
+    text-align: center; 
+    color: rgb(0, 0, 0);
+}
+/*to make it in the center and black*/
+h4{
+    font-family: 'Lato', sans-serif;
+    text-align: center; 
+    color: rgb(0, 0, 0);
+}
+
+/* Makes the home page pink-ish and font a different color*/
 
 body {
-    background-color: #205ea0;
+    background-color: #fbc4c4;
     font-family: Arial, sans-serif;
 }
 
 .meow {     /* for nav bar, doesnt really do anything just for aestetics, but it does reset the page*/
-    background-color: #69cbff;
+    background-color: #f9b7b7;
     padding: 15px;
     border-radius: 50px;
     display: flex;
@@ -14,21 +81,23 @@ body {
     align-items: center;
     max-width: 900px;
     margin: 20px auto;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /*This is for the letters in the navebar, to make it look abit better
 transition to not rush the image getting bigger.*/
 .meow a { 
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 10px 20px;
     transition: 0.3s ease-in-out;
     border-radius: 10px;
+    box-shadow: #000000;
 }
 /*Make background and text different when hovered over*/
 .meow a:hover {
-    background-color: #1cb0ff;
+    background-color: #ffaeae;
     color: white;
 }
 
@@ -36,10 +105,11 @@ transition to not rush the image getting bigger.*/
 */
 #hisss {
     margin-top: 40px;
-    background-color: #6a34ff;
+    background-color: #ff9393;
     color: white;
     padding: 20px;
     border-radius: 5px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*Webpage look good by putting a colored container and border radius at 10px so its not too curved*/
@@ -47,9 +117,10 @@ transition to not rush the image getting bigger.*/
     width: 80%;
     margin: auto;
     text-align: left;
-    background-color: #1287be;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -65,15 +136,14 @@ transition to not rush the image getting bigger.
     max-width: 1200px;
     margin: 0 auto; 
     padding: 20px;
-    background-color: rgb(0, 47, 59);
+    background-color: rgb(255, 127, 127);
     border-radius: 4px;
     display: flex;
     justify-content: center;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
     }
     /*Make it so image gets bigger by 1.1 when it is hovered over.*/
     .moo:hover {
     transform: scale(1.1);      
     }
-
-
-
+    

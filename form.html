@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+<link rel="stylesheet" href="Css/external.css">
+<style>
+    /* This styles the whole form and makes it look nice with color, space, and shadow */
+    form {
+    margin-top: 30px;
+    background-color: #ffe5e5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+/* This makes the labels bold and adds space so it's easier to read */
+    label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    }
+/* This styles the input boxes so they are wide, easy to type in, and look clean */
+    input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    }
+/* This styles the submit button to look red and rounded with nice text */
+    input[type="submit"] {
+    background-color: #df4d4d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+/* This makes the button change a bit when you hover over it to look cooler */
+    input[type="submit"]:hover {
+    background-color: #bd3535;
+    transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="meow">
+        <a href="facts.html">Facts</a>
+        <a href="glossary.html">Glossary</a>
+    <a href="index.html">Roots of Treaty 1</a>
+        <a href="sources.html">Sources</a>
+        <a href="form.html">Form</a>
+</nav>
+
+<section id="oink">
+    <h1>What Treaty 1 Means Today</h1>
+    <p>Treaty 1 is still important today because it reminds us of the promises made between Indigenous Peoples and the Canadian government. It shows how important it is to honor those promises and respect Indigenous rights. Learning about this helps us build a better future for everyone.</p>
+<!--form stuff-->
+    <h2>Share Your Thoughts</h2>
+    <form onsubmit="showThankYou(); return false;">
+    <form>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="meaning">What does Treaty 1 mean to you?</label>
+    <textarea id="meaning" name="meaning" rows="4" cols="40"></textarea>
+    <label for="action">How can we honor Treaty 1 today?</label>
+    <select id="action" name="action">
+        <option value="learn">Learn more about Indigenous history</option>
+        <option value="respect">Show respect and listen</option>
+        <option value="share">Teach others about treaties</option>
+        <option value="other">Other</option>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function showThankYou() {
+        alert("Thank you for sharing your opinion!");
+        }
+    </script>
+    <br>
+
+    <footer id="hisss">
+        <p>&copy; 2025 Treaty 1. All rights reserved.</p>
+    </footer>
+</body>
+</html>
